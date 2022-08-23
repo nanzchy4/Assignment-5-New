@@ -18,7 +18,6 @@ function disableButton(event){
 function lengthCheck(playerNo){
     const liElements = document.querySelectorAll('ol li');
     const liNumber = liElements.length;
-    console.log(liNumber);
     if(liNumber ===5){
     alert("5 players Selected Already");
     return 0;

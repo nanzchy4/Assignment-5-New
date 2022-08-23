@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dream Team</title>
+    <title>Form Your Dream Team</title>
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet"> -->
@@ -92,20 +92,20 @@
                 </div>
                 <div class="border border-slate-400 text-white bg-zinc-900 pb-12">
                     <h1 class="text-2xl	text-center font-semibold mt-6 mb-4" >Budget</h1>
-                    <label for="" class="mx-4">Per Player</label>
-                    <input type="text" name="" id="" class="w-1/2 py-2 bg-zinc-900 border ">
-                    <button class="block bg-sky-800 px-16 py-2.5 font-semibold w-3/4 mx-auto mt-4 mb-6">Calculate</button>
+                    <span  class="mx-4">Per Player</span>
+                    <input id="unitCost" type="text" name="" class="w-1/2 py-2 bg-zinc-900 border ">
+                    <button id="calc" class="block bg-sky-800 px-16 py-2.5 font-semibold w-3/4 mx-auto mt-4 mb-6">Calculate</button>
 
-                    <label for="" class="mx-4">Player Expenses</label>
-                    <h1 class="inline">$<span>5000</span></h1>
-                    <label for="" class="mx-4">Manager</label>
-                    <input type="text" name="" id="" class="w-1/2 py-2 bg-zinc-900 border mb-4 mt-4">
-                    <label for="" class="mx-6">Coach</label>
-                    <input type="text" name="" id="" class="w-1/2 py-2 bg-zinc-900 border ">
+                    <span class="mx-4">Player Expenses</span>
+                    <h1 class="inline">$<span id="playerCost">00</span></h1>
+                    <span  class="mx-4">Manager</span>
+                    <input id="manager" type="text" name="" class="w-1/2 py-2 bg-zinc-900 border mb-4 mt-4">
+                    <span  class="mx-6">Coach</span>
+                    <input id="coach" type="text" name="" class="w-1/2 py-2 bg-zinc-900 border ">
 
-                    <button class="block bg-sky-800 px-10 py-2.5 font-semibold w-3/4 mx-auto mt-4 mb-4">Calculate Total</button>
-                    <label for="" class="ml-6 mr-28">Total</label>
-                    <h1 class="inline text-orange-600 font-semibold">$<span>11000</span></h1>
+                    <button id="totalCalc" class="block bg-sky-800 px-10 py-2.5 font-semibold w-3/4 mx-auto mt-4 mb-4">Calculate Total</button>
+                    <span  class="ml-6 mr-28">Total</span>
+                    <h1 class="inline text-orange-600 font-semibold">$<span id="finalCost">00</span></h1>
                 </div>
             </div>
 
