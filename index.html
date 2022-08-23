@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream Team</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 <body>
     <!-- header part start  -->
@@ -26,8 +27,70 @@
     <main>
 
         <section class="mt-20 w-4/5 mx-auto">
-            <div class="grid grid-cols-4 gap-4">
-                <div class="border border-slate-400 text-center text-white bg-zinc-900">
+            <div class="grid grid-cols-4 gap-4 mb-6">
+                <div class="border border-slate-400 text-center text-white bg-zinc-900 h-96">
+                    <img src="images/player-1.jpg" alt="" class="object-fill w-72 h-52"><!--h-80 w-full-->
+                    <h1 class="text-2xl	font-semibold mt-4 mb-2	">Lionel Messi</h1>
+                    <span>36 Goals</span>
+                    <span>.</span>
+                    <span>120 Assist</span>
+                    <button class="block bg-sky-800 px-16 py-2.5 font-semibold w-3/4 mx-auto mt-4">SELECT</button>
+                </div>
+                <div class="border border-slate-400 text-center text-white bg-zinc-900 h-96">
+                    <img src="images/player-2.jpg" alt="" class="object-fill w-72 h-52"><!--h-80 w-full-->
+                    <h1 class="text-2xl	font-semibold mt-4 mb-2	">Xavi Hernandez</h1>
+                    <span>36 Goals</span>
+                    <span>.</span>
+                    <span>120 Assist</span>
+                    <button class="block bg-sky-800 px-16 py-2.5 font-semibold w-3/4 mx-auto mt-4 mb-4">SELECT</button>
+                </div>
+                <div class="border border-slate-400 text-center text-white bg-zinc-900 h-96">
+                    <img src="images/player-3.jpg" alt="" class="object-fill w-72 h-52"><!--h-80 w-full-->
+                    <h1 class="text-2xl	font-semibold mt-4 mb-2	">David Beckhalm</h1>
+                    <span>36 Goals</span>
+                    <span>.</span>
+                    <span>120 Assist</span>
+                    <button class="block bg-sky-800 px-16 py-2.5 font-semibold w-3/4 mx-auto mt-4 mb-4">SELECT</button>
+                </div>
+                <div class="border border-slate-400  text-white bg-zinc-900 h-96">
+                    <h1 class="text-2xl	text-center font-semibold mt-6 mb-8">Top Five [V] </h1>
+                    <ol class="list-decimal list-inside ml-6 font-semibold text-lg ">
+                        <li id="player-1" class="p-3"><span class="ml-3"> King pong</span></li>
+                        <li id="player-2" class="p-3"><span class="ml-3">Karim pong</span></li>
+                        <li id="player-3" class="p-3"><span class="ml-3">king khan</span></li>
+                        <li id="player-4" class="p-3"><span class="ml-3">bong guy</span></li>
+                        <li id="player-5" class="p-3"><span class="ml-3">ping pong</span></li>
+                    </ol>
+                </div>   
+            </div>
+
+            <!-- row-2 -->
+            <div class="grid grid-cols-4 gap-4 mb-6">
+                <div class="border border-slate-400 text-center text-white bg-zinc-900 h-96">
+                    <img src="images/player-4.jpg" alt="" class="object-fill w-72 h-52"><!--h-80 w-full-->
+                    <h1 class="text-2xl	font-semibold mt-4 mb-2	">Franl Lampard</h1>
+                    <span>36 Goals</span>
+                    <span>.</span>
+                    <span>120 Assist</span>
+                    <button class="block bg-sky-800 px-16 py-2.5 font-semibold w-3/4 mx-auto mt-4 mb-4">SELECT</button>
+                </div>
+                <div class="border border-slate-400 text-center text-white bg-zinc-900 h-96">
+                    <img src="images/player-5.jpg" alt="" class="object-fill w-72 h-52"><!--h-80 w-full-->
+                    <h1 class="text-2xl	font-semibold mt-4 mb-2	">David Villa</h1>
+                    <span>36 Goals</span>
+                    <span>.</span>
+                    <span>120 Assist</span>
+                    <button class="block bg-sky-800 px-16 py-2.5 font-semibold w-3/4 mx-auto mt-4 mb-4">SELECT</button>
+                </div>
+                <div class="border border-slate-400 text-center text-white bg-zinc-900 h-96">
+                    <img src="images/player-6.jpg" alt="" class="object-fill w-72 h-52"><!--h-80 w-full-->
+                    <h1 class="text-2xl	font-semibold mt-4 mb-2	">Cristiano Ronaldo</h1>
+                    <span>36 Goals</span>
+                    <span>.</span>
+                    <span>120 Assist</span>
+                    <button class="block bg-sky-800 px-16 py-2.5 font-semibold w-3/4 mx-auto mt-4 mb-4">SELECT</button>
+                </div>
+                <div class="border border-slate-400 text-center text-white bg-zinc-900 h-96">
                     <img src="images/player-1.jpg" alt="" class=""><!--h-80 w-full-->
                     <h1 class="text-2xl	font-semibold mt-4 mb-2	">Lionel Messi</h1>
                     <span>36 Goals</span>
@@ -35,23 +98,35 @@
                     <span>120 Assist</span>
                     <button class="block bg-sky-800 px-16 py-2.5 font-semibold w-3/4 mx-auto mt-4 mb-4">SELECT</button>
                 </div>
-                <div class="border border-slate-400 text-center text-white bg-zinc-900">
-                    <img src="images/player-1.jpg" alt="" class=""><!--h-80 w-full-->
-                    <h1 class="text-2xl	font-semibold mt-4 mb-2	">Lionel Messi</h1>
+            </div>
+
+            <!-- row 3 -->
+            <div class="grid grid-cols-4 gap-4 mb-6">
+                <div class="border border-slate-400 text-center text-white bg-zinc-900 h-96">
+                    <img src="images/player-7.jpg" alt="" class="object-fill w-72 h-52"><!--h-80 w-full-->
+                    <h1 class="text-2xl	font-semibold mt-4 mb-2	">Gerard Pique</h1>
                     <span>36 Goals</span>
                     <span>.</span>
                     <span>120 Assist</span>
                     <button class="block bg-sky-800 px-16 py-2.5 font-semibold w-3/4 mx-auto mt-4 mb-4">SELECT</button>
                 </div>
-                <div class="border border-slate-400 text-center text-white bg-zinc-900">
-                    <img src="images/player-1.jpg" alt="" class=""><!--h-80 w-full-->
-                    <h1 class="text-2xl	font-semibold mt-4 mb-2	">Lionel Messi</h1>
+                <div class="border border-slate-400 text-center text-white bg-zinc-900 h-96">
+                    <img src="images/player-8.jpg" alt="" class="object-fill w-72 h-52"><!--h-80 w-full-->
+                    <h1 class="text-2xl	font-semibold mt-4 mb-2	">Gareth Bell</h1>
                     <span>36 Goals</span>
                     <span>.</span>
                     <span>120 Assist</span>
                     <button class="block bg-sky-800 px-16 py-2.5 font-semibold w-3/4 mx-auto mt-4 mb-4">SELECT</button>
                 </div>
-                <div class="border border-slate-400 text-center text-white bg-zinc-900">
+                <div class="border border-slate-400 text-center text-white bg-zinc-900 h-96">
+                    <img src="images/player-9.jpg" alt="" class="object-fill w-72 h-52"><!--h-80 w-full-->
+                    <h1 class="text-2xl	font-semibold mt-4 mb-2	">Karim Benzema</h1>
+                    <span>36 Goals</span>
+                    <span>.</span>
+                    <span>120 Assist</span>
+                    <button class="block bg-sky-800 px-16 py-2.5 font-semibold w-3/4 mx-auto mt-4 mb-4">SELECT</button>
+                </div>
+                <div class="border border-slate-400 text-center text-white bg-zinc-900 h-96">
                     <img src="images/player-1.jpg" alt="" class=""><!--h-80 w-full-->
                     <h1 class="text-2xl	font-semibold mt-4 mb-2	">Lionel Messi</h1>
                     <span>36 Goals</span>
@@ -64,5 +139,6 @@
         </section>
     </main>
     <!-- main section end  -->
+    
 </body>
 </html>
