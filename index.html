@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Your Dream Team</title>
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 <body class="bg-black">
     <!-- header part start  -->
-    <header class="bg bg-no-repeat bg-cover flex items-center">
-        <div class="w-2/4 mx-auto text-center">
+    <header class="bg bg-no-repeat bg-cover flex justify-center items-center"><!--items-center-->
+        <div class="w-2/4 mx-auto text-center flex-initial">
             <h1 class="text-6xl text-orange-600 mb-6 font">Form Your Dream Team</h1>
              <p class="text-white">One typical topic of conversation across the football world at any given time is a "World XI" or "Dream Team".It is a topic that will always cause dispute and is highly subjective but always starts an interesting debate that says much of a person's footballing preferences.</p> 
         </div>
@@ -26,10 +26,10 @@
 
     <main>
 
-        <section class="mt-20 w-4/5 mx-auto">
+        <section class="mt-20 w-4/5 mx-auto mb-40">
             <div class="grid grid-cols-4 gap-6 mb-6">
                 <div class="border border-slate-400 text-center text-white bg-zinc-900 h-96">
-                    <img src="images/player-1.jpg" alt="" class="object-fill w-72 h-52"><!--h-80 w-full-->
+                    <img src="images/player-1.jpg" alt="" class="object-fill w-72 h-52">
                     <h1 id="player-1" class="text-2xl	font-semibold mt-4 mb-2	">Lionel Messi</h1>
                     <span>36 Goals</span>
                     <span>.</span>
@@ -45,7 +45,7 @@
                     <button id="select-2" class="block bg-sky-800 px-16 py-2.5 font-semibold w-3/4 mx-auto mt-4 mb-4">SELECT</button>
                 </div>
                 <div class="border border-slate-400 text-center text-white bg-zinc-900 h-96">
-                    <img src="images/player-3.jpg" alt="" class="object-fill w-72 h-52"><!--h-80 w-full-->
+                    <img src="images/player-3.jpg" alt="" class="object-fill w-72 h-52">
                     <h1 id="player-3" class="text-2xl	font-semibold mt-4 mb-2	">David Beckhalm</h1>
                     <span>36 Goals</span>
                     <span>.</span>
@@ -55,11 +55,6 @@
                 <div class="border border-slate-400  text-white bg-zinc-900 h-96">
                     <h1 class="text-2xl	text-center font-semibold mt-6 mb-8">Top Five [V] </h1>
                     <ol id="list-container" class="list-decimal list-inside ml-6 font-semibold text-lg ">
-                        <!-- <li class="p-3"><span id="member-1" class="ml-3"> King pong</span></li>
-                        <li class="p-3"><span id="member-2" class="ml-3">Karim pong</span></li>
-                        <li class="p-3"><span id="member-3" class="ml-3">king khan</span></li>
-                        <li class="p-3"><span id="member-4" class="ml-3">bong guy</span></li>
-                        <li class="p-3"><span id="member-5" class="ml-3"></span></li> -->
                     </ol>
                 </div>   
             </div>
@@ -67,7 +62,7 @@
             <!-- row-2 -->
             <div class="grid grid-cols-4 gap-6 mb-6">
                 <div class="border border-slate-400 text-center text-white bg-zinc-900 h-96">
-                    <img src="images/player-4.jpg" alt="" class="object-fill w-72 h-52"><!--h-80 w-full-->
+                    <img src="images/player-4.jpg" alt="" class="object-fill w-72 h-52">
                     <h1 id="player-4" class="text-2xl	font-semibold mt-4 mb-2	">Frank Lampard</h1>
                     <span>36 Goals</span>
                     <span>.</span>
@@ -75,7 +70,7 @@
                     <button id="select-4" class="block bg-sky-800 px-16 py-2.5 font-semibold w-3/4 mx-auto mt-4 mb-4">SELECT</button>
                 </div>
                 <div class="border border-slate-400 text-center text-white bg-zinc-900 h-96">
-                    <img src="images/player-5.jpg" alt="" class="object-fill w-72 h-52"><!--h-80 w-full-->
+                    <img src="images/player-5.jpg" alt="" class="object-fill w-72 h-52">
                     <h1 id="player-5" class="text-2xl	font-semibold mt-4 mb-2	">David Villa</h1>
                     <span>36 Goals</span>
                     <span>.</span>
@@ -83,7 +78,7 @@
                     <button id="select-5" class="block bg-sky-800 px-16 py-2.5 font-semibold w-3/4 mx-auto mt-4 mb-4">SELECT</button>
                 </div>
                 <div class="border border-slate-400 text-center text-white bg-zinc-900 h-96">
-                    <img src="images/player-6.jpg" alt="" class="object-fill w-72 h-52"><!--h-80 w-full-->
+                    <img src="images/player-6.jpg" alt="" class="object-fill w-72 h-52">
                     <h1 id="player-6" class="text-2xl	font-semibold mt-4 mb-2	">Cristiano Ronaldo</h1>
                     <span>36 Goals</span>
                     <span>.</span>
@@ -108,38 +103,12 @@
                     <h1 class="inline text-orange-600 font-semibold">$<span id="finalCost">00</span></h1>
                 </div>
             </div>
-
-            <!-- row 3 -->
-            <!-- <div class="grid grid-cols-4 gap-6 mb-6">
-                <div class="border border-slate-400 text-center text-white bg-zinc-900 h-96">
-                    <img src="images/player-7.jpg" alt="" class="object-fill w-72 h-52"><!--h-80 w-full-->
-                    <!-- <h1 id="player-7" class="text-2xl	font-semibold mt-4 mb-2	">Gerard Pique</h1>
-                    <span>36 Goals</span>
-                    <span>.</span>
-                    <span>120 Assist</span>
-                    <button id="select-7" class="block bg-sky-800 px-16 py-2.5 font-semibold w-3/4 mx-auto mt-4 mb-4">SELECT</button>
-                </div>
-                <div class="border border-slate00 h-96">
-                    <img src="images/player-8.jpg-400 text-center text-white bg-zinc-9" alt="" class="object-fill w-72 h-52">h-80 w-full -->
-                    <!-- <h1 id="player-8" class="text-2xl	font-semibold mt-4 mb-2	">Gareth Bell</h1>
-                    <span>36 Goals</span>
-                    <span>.</span>
-                    <span>120 Assist</span>
-                    <button id="select-8" class="block bg-sky-800 px-16 py-2.5 font-semibold w-3/4 mx-auto mt-4 mb-4">SELECT</button>
-                </div> -->
-                <!-- <div class="border border-slate-400 text-center text-white bg-zinc-900 h-96">
-                    <img src="images/player-9.jpg" alt="" class="object-fill w-72 h-52"> -->
-                    <!--h-80 w-full-->
-                    <!-- <h1 id="player-9" class="text-2xl	font-semibold mt-4 mb-2	">Karim Benzema</h1>
-                    <span>36 Goals</span>
-                    <span>.</span>
-                    <span>120 Assist</span>
-                    <button id="select-9" class="block bg-sky-800 px-16 py-2.5 font-semibold w-3/4 mx-auto mt-4 mb-4">SELECT</button>
-                </div>
-            </div>  -->
         </section>
     </main>
     <!-- main section end  -->
+    <hr>
+    <footer><p class="text-white mt-10 text-center mb-16">Copyright @ 2022 All Rights Reserved</p></footer>
+
     <script src="js/common.js"></script>
     <script src="js/select.js"></script>
     <script src="js/calculation.js"></script>
