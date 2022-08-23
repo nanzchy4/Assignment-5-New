@@ -27,3 +27,22 @@ function lengthCheck(playerNo){
     updatePlayerList(playerName);
 }
 }
+
+// calcuation js common function
+
+function getInputValue(Id){
+
+    const inputFieldElement = document.getElementById(Id);
+    const inputFieldString = inputFieldElement.value;
+
+    if(isNaN(inputFieldString)){
+        alert('Please Enter a number type value');
+        inputFieldElement.value='';
+        return;
+    }
+    else{
+    const inputFieldValue = parseFloat(inputFieldString);
+
+    return inputFieldValue;
+}
+}

@@ -1,36 +1,25 @@
+// calculate button handler 
 document.getElementById('calc').addEventListener('click', function(){
    
-    const inputFieldElement = document.getElementById('unitCost');
-    const inputFieldString = inputFieldElement.value;
-    const inputFieldValue = parseFloat(inputFieldString);
+    const singlePlayerCost = getInputValue('unitCost');
 
     const playerExpensesElement = document.getElementById('playerCost');
     
     const topFiveElements = document.querySelectorAll('ol li');
     const playerNumber = topFiveElements.length;
 
-
-    const updatedPlayerExpense = inputFieldValue * playerNumber;
+    const updatedPlayerExpense = singlePlayerCost * playerNumber;
     playerExpensesElement.innerText = updatedPlayerExpense;
 
 })
-
-function staffExpense(staffId){
-
-    const staffExpensesElement = document.getElementById(staffId);
-    const staffExpensesString = staffExpensesElement.value;
-    const staffExpenses = parseFloat(staffExpensesString);
-    return staffExpenses;
-
-}
-
+// total calculate button handler
 document.getElementById('totalCalc').addEventListener('click', function(){
     const playerExpensesElement = document.getElementById('playerCost');
     const playerExpensesString = playerExpensesElement.innerText;
     const playerExpenses = parseFloat(playerExpensesString);
 
-    const managerExpenses = staffExpense('manager');
-    const coachExpenses = staffExpense('coach');  
+    const managerExpenses = getInputValue('manager');
+    const coachExpenses = getInputValue('coach');  
     
     const totalExpense = playerExpenses + managerExpenses + coachExpenses;
 
